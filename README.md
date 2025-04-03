@@ -8,7 +8,6 @@ MedWise is an AI-powered healthcare application designed to assist users in anal
 - **Blood Report Summarizer:** Upload a blood report (PDF), and the AI extracts and summarizes key findings.
 - **User-Friendly Interface:** Built with **Streamlit** for an interactive and easy-to-use experience.
 
-
 ## Tech Stack
 - **Python**
 - **Streamlit** (Frontend UI)
