@@ -19,7 +19,6 @@ MedWise is an AI-powered healthcare application designed to assist users in anal
 - Python 3.8+
 - Google Generative AI API Key
 
-
 ### Steps
 1. **Clone the repository**
    ```bash
