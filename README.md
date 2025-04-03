@@ -14,7 +14,6 @@ MedWise is an AI-powered healthcare application designed to assist users in anal
 - **Google Generative AI (Gemini 1.5-Flash)** (AI-powered analysis)
 - **PyPDF2** (PDF text extraction)
 
-
 ## Installation
 ### Prerequisites
 - Python 3.8+
