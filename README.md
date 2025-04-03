@@ -1,1 +1,1 @@
-# MedWise
+# MedWise - Your AI health assistant
