@@ -1,7 +1,11 @@
+# -*- coding: utf-8 -*-
+
+"""This module handles Health Summarization logic."""
+
 import streamlit as st
 from PyPDF2 import PdfReader
 import google.generativeai as genai
-from genai_services import genai_response
+from app.genai_services import genai_response
 
 st.title("Health Report Summarizer")
 st.write("Upload a blood report (PDF format) to get a summary and potential diagnosis.")
@@ -33,7 +37,7 @@ if uploaded_file:
                 )
                 try:
                     model = genai.GenerativeModel("gemini-1.5-flash")
-                    response=genai_response(prompt)
+                    response = genai_response(prompt)
                     st.write("### AI-Generated Summary:")
                     st.write(response)
                 except Exception as e:

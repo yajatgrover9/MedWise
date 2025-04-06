@@ -63,14 +63,14 @@ MedWise is an AI-powered healthcare application designed to assist users in anal
 ```
 Medwise/
 ├── app/
-│   ├── pages/               
+│   ├── pages/
 │      ├── 1_SymptomChecker.py
 │      ├── 2_HealthSummarizer.py
 │   ├── genai_services.py
-│   ├── Home.py               
-├── requirements.txt    
-├── README.md            
-└── .env                 
+│   ├── Home.py
+├── requirements.txt
+├── README.md
+└── .env
 ```
 
 ## Future Improvements
@@ -86,4 +86,3 @@ Medwise/
 
 ## Contact
 For inquiries or support, reach out at: **yajatgrover@gmail.com**
-

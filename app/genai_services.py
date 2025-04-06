@@ -1,3 +1,7 @@
+# -*- coding: utf-8 -*-
+
+"""This module handles calling GENAI services."""
+
 import os
 import google.generativeai as genai
 from dotenv import load_dotenv
@@ -9,5 +13,8 @@ model = genai.GenerativeModel("gemini-1.5-flash")
 
 
 def genai_response(prompt):
+    """
+    Function to generate AI response
+    """
     response = model.generate_content(prompt)
     return response.text

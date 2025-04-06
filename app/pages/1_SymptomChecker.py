@@ -1,15 +1,49 @@
-import streamlit as st
+# -*- coding: utf-8 -*-
 
-from genai_services import genai_response
+"""This module handles Symptom checking logic."""
+
+import streamlit as st
+from app.genai_services import genai_response
 
 common_symptoms = [
-    "Fatigue", "Weakness", "Fever", "Chills", "Night sweats", "Weight loss without trying",
-    "Weight gain without trying", "Loss of appetite", "Excessive thirst", "Dehydration",
-    "Headache", "Muscle pain", "Joint pain", "Chest pain", "Abdominal pain", "Back pain",
-    "Sore throat", "Dizziness", "Fainting", "Tingling or numbness", "Difficulty concentrating",
-    "Memory loss", "Seizures", "Vision problems", "Shortness of breath", "Persistent cough",
-    "Rapid heartbeat", "Swelling in legs", "Nausea", "Vomiting", "Diarrhea", "Constipation",
-    "Heartburn", "Rash", "Itching", "Frequent urination", "Painful urination", "Blood in urine"
+    "Fatigue",
+    "Weakness",
+    "Fever",
+    "Chills",
+    "Night sweats",
+    "Weight loss without trying",
+    "Weight gain without trying",
+    "Loss of appetite",
+    "Excessive thirst",
+    "Dehydration",
+    "Headache",
+    "Muscle pain",
+    "Joint pain",
+    "Chest pain",
+    "Abdominal pain",
+    "Back pain",
+    "Sore throat",
+    "Dizziness",
+    "Fainting",
+    "Tingling or numbness",
+    "Difficulty concentrating",
+    "Memory loss",
+    "Seizures",
+    "Vision problems",
+    "Shortness of breath",
+    "Persistent cough",
+    "Rapid heartbeat",
+    "Swelling in legs",
+    "Nausea",
+    "Vomiting",
+    "Diarrhea",
+    "Constipation",
+    "Heartburn",
+    "Rash",
+    "Itching",
+    "Frequent urination",
+    "Painful urination",
+    "Blood in urine",
 ]
 
 st.title("Symptom Checker")
@@ -21,7 +55,7 @@ patient_id = st.text_input("Patient ID")
 
 symptom_entry_method = st.radio(
     "How would you like to enter symptoms?",
-    options=["Select from dropdown", "Type symptoms manually"]
+    options=["Select from dropdown", "Type symptoms manually"],
 )
 
 if symptom_entry_method == "Select from dropdown":
@@ -30,7 +64,7 @@ if symptom_entry_method == "Select from dropdown":
 else:
     symptoms = st.text_area(
         "Enter Symptoms (separated by commas)",
-        placeholder="E.g., fever, headache, joint pain"
+        placeholder="E.g., fever, headache, joint pain",
     )
 
 if st.button("Get Diagnosis"):
