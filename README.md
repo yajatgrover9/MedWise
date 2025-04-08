@@ -79,10 +79,15 @@ Medwise/
 - Enhanced AI responses using **fine-tuned medical models**.
 
 ## Contributing
-1. Fork the repository.
-2. Create a new branch (`feature-xyz`).
+1. **Clone the repository and checkout the `dev` branch**:
+```bash
+   git clone -b dev https://github.com/yajatgrover9/MedWise.git
+   cd MedWise
+```
+2. Create a new branch.
 3. Commit your changes.
-4. Submit a pull request.
+4. Submit a pull request for ```dev```.
+
 
 ## Contact
 For inquiries or support, reach out at: **yajatgrover@gmail.com**
