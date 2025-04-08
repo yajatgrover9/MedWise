@@ -44,6 +44,8 @@ MedWise is an AI-powered healthcare application designed to assist users in anal
      ```env
      GOOGLE_GENAI_KEY=your_api_key_here
      ```
+   - User login credentials and authentication logic is managed securely using a ```config.yaml``` file.
+
 
 5. **Run the Streamlit app**
    ```bash
@@ -74,6 +76,15 @@ Medwise/
 ├── README.md
 └── .env
 ```
+## 🚀 Live Application
+
+MedWise is live and ready to use! You can access the deployed version of the app here:
+
+🔗 **Launch [MedWise](https://medwise-ai.streamlit.app)**
+
+### Authentication Notice:
+To ensure privacy and data security, MedWise requires **login authentication** before using any features. Only authorized users can access symptom analysis or upload medical reports.
+If you’d like to use the MedWise application, please reach out to the admin.
 
 ## Future Improvements
 - Integration with **FHIR APIs** for better medical data handling.
@@ -84,7 +95,7 @@ Medwise/
 
 We welcome contributions to MedWise!
 
-To maintain stability and security of the deployed application, all contributions should be made using **`dev` branch** only.
+To maintain stability and security of the deployed application, all contributions should be made using [**`dev` branch**](https://github.com/yajatgrover9/MedWise/tree/dev) only.
 
 ### Steps to Contribute:
 
@@ -98,4 +109,4 @@ To maintain stability and security of the deployed application, all contribution
 4. Submit a pull request for ```dev```.
 
 ## Contact
-For inquiries or support, reach out at: **yajatgrover@gmail.com**
+For inquiries or support, reach out to **yajatgrover@gmail.com**
