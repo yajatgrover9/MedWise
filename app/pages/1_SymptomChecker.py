@@ -50,7 +50,8 @@ if authentication_status:
 
     # Patient details
     patient_name = st.text_input("Patient Name")
-    # patient_id = st.text_input("Patient ID")
+    patient_age = st.number_input("Age", min_value=0, max_value=120, step=1)
+    patient_gender = st.radio("Gender", options=["Male", "Female", "Other"])
 
     symptom_entry_method = st.radio(
         "How would you like to enter symptoms?",
@@ -73,9 +74,11 @@ if authentication_status:
             else:
                 prompt = (
                     "You are an experienced medical professional specializing in diagnosing diseases based on symptoms. "
+                    f"Patient Name: {patient_name}, Age: {patient_age}, Gender: {patient_gender}. "
                     f"The patient reports the following symptoms: {symptoms}. "
                     "Based on these symptoms, please provide a potential diagnosis and any recommendations."
                 )
+
                 response = genai_response(prompt)
                 st.success("Diagnosis Completed!")
                 st.write(f"### Diagnosis for {patient_name}")

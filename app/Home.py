@@ -1,14 +1,22 @@
 # -*- coding: utf-8 -*-
-
+import os
 import streamlit as st
 import streamlit_authenticator as stauth
 import yaml
-from yaml.loader import SafeLoader
+from dotenv import load_dotenv
+import base64
+
+load_dotenv()
 
 st.set_page_config(page_title="MedWise", page_icon="🩺", layout="wide")
 
-with open("config.yaml") as file:
-    config = yaml.load(file, Loader=SafeLoader)
+b64_config = os.environ.get("CONFIG_YAML")
+
+config_bytes = base64.b64decode(b64_config)
+config = yaml.safe_load(config_bytes)
+print(config)
+# with open("config.yaml") as file:
+#     config = yaml.load(file, Loader=SafeLoader)
 
 authenticator = stauth.Authenticate(
     config["credentials"],
