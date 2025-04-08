@@ -3,7 +3,7 @@
 """This module handles Symptom checking logic."""
 
 import streamlit as st
-from app.genai_services import genai_response
+from genai_services import genai_response
 
 common_symptoms = [
     "Fatigue",

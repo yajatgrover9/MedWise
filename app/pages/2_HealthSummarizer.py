@@ -5,7 +5,7 @@
 import streamlit as st
 from PyPDF2 import PdfReader
 import google.generativeai as genai
-from app.genai_services import genai_response
+from genai_services import genai_response
 
 st.title("Health Report Summarizer")
 st.write("Upload a blood report (PDF format) to get a summary and potential diagnosis.")
