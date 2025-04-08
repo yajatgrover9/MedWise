@@ -53,4 +53,4 @@ if authentication_status is True:
 
 
 if authentication_status is False:
-    st.error("Incorrect username/password")
+    st.error("Incorrect Username/Password")
