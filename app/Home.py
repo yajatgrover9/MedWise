@@ -14,9 +14,6 @@ b64_config = os.environ.get("CONFIG_YAML")
 
 config_bytes = base64.b64decode(b64_config)
 config = yaml.safe_load(config_bytes)
-print(config)
-# with open("config.yaml") as file:
-#     config = yaml.load(file, Loader=SafeLoader)
 
 authenticator = stauth.Authenticate(
     config["credentials"],
