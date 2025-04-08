@@ -6,7 +6,6 @@ MedWise is an AI-powered healthcare application designed to assist users in anal
 ## Features
 - **Authentication System:** Login with username and password to access the application securely.
 - **Symptom Checker:** Users can input symptoms, and the AI provides potential diagnoses.
-- **Symptom Checker:** Users can input symptoms, and the AI provides potential diagnoses.
 - **Blood Report Summarizer:** Upload a blood report (PDF), and the AI extracts and summarizes key findings.
 - **User-Friendly Interface:** Built with **Streamlit** for an interactive and easy-to-use experience.
 
