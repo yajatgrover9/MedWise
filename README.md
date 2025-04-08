@@ -4,6 +4,8 @@
 MedWise is an AI-powered healthcare application designed to assist users in analyzing medical symptoms and summarizing blood reports. It leverages **Google Gemini AI** to provide potential diagnoses and medical advice based on uploaded reports and symptoms.
 
 ## Features
+- **Authentication System:** Login with username and password to access the application securely.
+- **Symptom Checker:** Users can input symptoms, and the AI provides potential diagnoses.
 - **Symptom Checker:** Users can input symptoms, and the AI provides potential diagnoses.
 - **Blood Report Summarizer:** Upload a blood report (PDF), and the AI extracts and summarizes key findings.
 - **User-Friendly Interface:** Built with **Streamlit** for an interactive and easy-to-use experience.
@@ -79,10 +81,21 @@ Medwise/
 - Enhanced AI responses using **fine-tuned medical models**.
 
 ## Contributing
-1. Fork the repository.
-2. Create a new branch (`feature-xyz`).
+
+We welcome contributions to MedWise!
+
+To maintain stability and security of the deployed application, all contributions should be made using **`dev` branch** only.
+
+### Steps to Contribute:
+
+1. **Clone the repository and checkout the `dev` branch**:
+```bash
+   git clone -b dev https://github.com/yajatgrover9/MedWise.git
+   cd MedWise
+```
+2. Create a new branch.
 3. Commit your changes.
-4. Submit a pull request.
+4. Submit a pull request for ```dev```.
 
 ## Contact
 For inquiries or support, reach out at: **yajatgrover@gmail.com**
