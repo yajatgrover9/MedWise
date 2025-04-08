@@ -79,5 +79,5 @@ if st.button("Get Diagnosis"):
             )
             response = genai_response(prompt)
             st.success("Diagnosis Completed!")
-            st.write(f"### Diagnosis for {patient_name} )")
+            st.write(f"### Here is your diagnosis, {patient_name.upper()} ")
             st.write(response)
