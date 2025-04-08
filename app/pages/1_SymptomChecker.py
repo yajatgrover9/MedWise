@@ -51,7 +51,7 @@ st.write("Enter the patient's details and symptoms to get a potential diagnosis.
 
 # Patient details
 patient_name = st.text_input("Patient Name")
-patient_id = st.text_input("Patient ID")
+
 
 symptom_entry_method = st.radio(
     "How would you like to enter symptoms?",
@@ -69,7 +69,7 @@ else:
 
 if st.button("Get Diagnosis"):
     with st.spinner("Please Wait ..."):
-        if not patient_name or not patient_id or not symptoms:
+        if not patient_name or not symptoms:
             st.error("Please fill out all fields.")
         else:
             prompt = (
@@ -79,5 +79,5 @@ if st.button("Get Diagnosis"):
             )
             response = genai_response(prompt)
             st.success("Diagnosis Completed!")
-            st.write(f"### Diagnosis for {patient_name} (ID: {patient_id})")
+            st.write(f"### Diagnosis for {patient_name} )")
             st.write(response)

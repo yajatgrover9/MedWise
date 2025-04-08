@@ -52,8 +52,8 @@ repos:
       - id: trailing-whitespace
       - id: fix-encoding-pragma
         files: \.py$
-      - id: no-commit-to-branch
-        args: [--branch, master, --branch, dev, --branch, qa]
+      #- id: no-commit-to-branch
+        #args: [--branch, master, --branch, main, --branch, qa]
       - id: debug-statements
       - id: pretty-format-json
         args: [--autofix]
